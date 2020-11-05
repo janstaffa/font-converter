@@ -4,3 +4,4 @@ I was basically working on a web app, and I had to create a font selector. But s
 
 The file convert.py contains the script.
 And the fonts.txt contains all the fonts that I wanted to include.
+Finally, fontapp.html is a little preview that I made just to show how annoying it would be to do it by hand.
