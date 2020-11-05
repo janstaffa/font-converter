@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1 id="preview">Some text</h1>
+    <select id="selector" name="fontSelector" onchange="changePreview();">
+        <option style="font-family:Arial, sans-serif;">Arial</option>
+        <option style="font-family:Helvetica, sans-serif;">Helvetica</option>
+        <option style="font-family:Verdana, sans-serif;">Verdana</option>
+        <option style="font-family:Trebuchet MS, sans-serif;">Trebuchet MS</option>
+        <option style="font-family:Gill Sans, sans-serif;">Gill Sans</option>
+        <option style="font-family:Noto Sans, sans-serif;">Noto Sans</option>
+        <option style="font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;">Avantgarde</option>
+        <option style="font-family:Optima, sans-serif;">Optima</option>
+        <option style="font-family:Arial Narrow, sans-serif;">Arial Narrow</option>
+        <option style="font-family:sans-serif;">sans-serif</option>
+        <option style="font-family:Times, Times New Roman, serif;">Times</option>
+        <option style="font-family:Didot, serif;">Didot</option>
+        <option style="font-family:Georgia, serif;">Georgia</option>
+        <option style="font-family:Palatino, URW Palladio L, serif;">Palatino</option>
+        <option style="font-family:Bookman, URW Bookman L, serif;">Bookman</option>
+        <option style="font-family:New Century Schoolbook, TeX Gyre Schola, serif;">New Century Schoolbook</option>
+        <option style="font-family:American Typewriter, serif;">American Typewriter</option>
+        <option style="font-family:serif;">Serif</option>
+        <option style="font-family:Andale Mono, monospace;">Andale Mono</option>
+        <option style="font-family:Courier New, monospace;">Courier New</option>
+        <option style="font-family:Courier, monospace;">Courier</option>
+        <option style="font-family:FreeMono, monospace;">FreeMono</option>
+        <option style="font-family:OCR A Std, monospace;">OCR A Std</option>
+        <option style="font-family:DejaVu Sans Mono, monospace;">DejaVu Sans Mono</option>
+        <option style="font-family:monospace;">monospace</option>
+        <option style="font-family:Comic Sans MS, Comic Sans, cursive;">Comic Sans MS</option>
+        <option style="font-family:Apple Chancery, cursive;">Apple Chancery</option>
+        <option style="font-family:Bradley Hand, cursive;">Bradley Hand</option>
+        <option style="font-family:Brush Script MT, Brush Script Std, cursive;">Brush Script MT</option>
+        <option style="font-family:Snell Roundhand, cursive;">Snell Roundhand</option>
+        <option style="font-family:URW Chancery L, cursive;">URW Chancery L</option>
+        <option style="font-family:cursive;">Cursive</option>
+        <option style="font-family:Impact, fantasy;">Impact</option>
+        <option style="font-family:Luminari, fantasy;">Luminari</option>
+        <option style="font-family:Chalkduster, fantasy;">Chalkduster</option>
+        <option style="font-family:Jazz LET, fantasy;">Jazz LET</option>
+        <option style="font-family:Blippo, fantasy;">Blippo</option>
+        <option style="font-family:Stencil Std, fantasy;">Stencil Std</option>
+        <option style="font-family:Marker Felt, fantasy;">Marker Felt</option>
+        <option style="font-family:Trattatello, fantasy;">Trattatello</option>
+        <option style="font-family:fantasy;">Fantasy</option>                                                 
+    </select>
+        <script>
+            function changePreview() {
+                var selector = document.getElementById('selector');
+                var family = selector.options[selector.selectedIndex].value;
+                var preview = document.getElementById('preview')
+                preview.style.fontFamily = family;        
+            }
+        </script>
+    </body>
+</html>
